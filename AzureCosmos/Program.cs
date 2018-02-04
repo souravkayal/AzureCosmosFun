@@ -11,6 +11,7 @@ namespace AzureCosmos
         static void Main(string[] args)
         {
 
+            Console.ReadLine();
         }
     }
 }

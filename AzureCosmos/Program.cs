@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AzureCosmos.AzureMongo;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,8 +11,14 @@ namespace AzureCosmos
     {
         static void Main(string[] args)
         {
+            PersonRepository mongoPersonRepo = new PersonRepository();
+            //mongoPersonRepo.CreatePerson(new Model.Person { Name = "Ram", Surname = "Kayal", Age = 29 });
 
-            Console.ReadLine();
+            //var result = mongoPersonRepo.GetAllPerson("Persons");
+
+            //mongoPersonRepo.UpdatePerson(new Model.Person { Age = 35, Name = "Sourav", Surname = "Kumar" });
+
+            mongoPersonRepo.DeletePerson(new Model.Person { Name = "Ram" });
         }
     }
 }

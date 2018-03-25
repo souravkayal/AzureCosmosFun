@@ -68,8 +68,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AzureGraph\GraphRepository.cs" />
+    <Compile Include="AzureGraph\GraphSetting.cs" />
     <Compile Include="AzureMongo\PersonRepository.cs" />
     <Compile Include="AzureMongo\MongoSetting.cs" />
+    <Compile Include="AzureSQL\AddressRepository.cs" />
+    <Compile Include="AzureSQL\SQLSetting.cs" />
     <Compile Include="Model\Person.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -80,8 +84,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="AzureCassendra\" />
-    <Folder Include="AzureGraph\" />
-    <Folder Include="AzureSQL\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
